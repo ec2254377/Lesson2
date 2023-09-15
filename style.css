@@ -1,0 +1,35 @@
+/* This is main stylesheet*::after
+
+/*color scheme*::after
+/* light green #99BF76*::after
+/* light blue #93BFB7*::after
+/*turquiose #7AB8BF*::after
+/* beige #F2E7DC*/
+/* light-beige  #DAFDBA*/
+/* grey #4B4952*/
+/* blush #A68F97*/
+/* dark #0B2B40 */
+
+.light_blue{
+  background-color:  #93BFB7;
+}
+
+.light{
+  background-color: #99BF76;
+}
+
+.grey{
+  color:#4B4952 ;
+}
+
+.blush{
+  color:#0B2B40;
+}
+
+.center{
+  text-align:center;
+}
+
+.center1{
+  text-align:center;
+}
