@@ -9,8 +9,11 @@
 /* grey #4B4952*/
 /* blush #A68F97*/
 /* dark #0B2B40 */
+/* brown: #818274*/
+/* green:#027368*/
+/* light-turquiose:#04BFAD*/
 
-.light_blue{
+body{
   background-color:  #93BFB7;
 }
 
@@ -18,9 +21,20 @@
   background-color: #99BF76;
 }
 
-.grey{
+.grey1{
   color:#4B4952 ;
+  text-align:center;
 }
+
+.size{
+  font-size:20px;
+  text-align:center;
+}
+
+.grey{
+  color::#4B4952;
+}
+
 
 .blush{
   color:#0B2B40;
@@ -30,6 +44,143 @@
   text-align:center;
 }
 
-.center1{
+
+.center2{
+  text-align:center;
+  list-style:none;
+}
+
+
+
+
+nav{
+  background-color:#027368 ;
+  color:#000000;
+  border:1px solid;
+  display:block;
+  overflow:hidden;
+  width:100%;
+}
+
+nav ul li{
+  display:inline-block;
+  list-style: none;
+}
+
+nav ul li a{
+  color:#000000;
+  display:block;
+  line-height: 56px;
+  text-decoration: none;
+  padding:10px;
+}
+
+nav ul li:hover{
+  background-color:#04BFAD;
+}
+
+footer{
+  background-color:#027368 ;
+  color:#000000;
+  border:1px solid;
+  display:block;
+  overflow:hidden;
+  width:100%;
+  
+}
+
+footer a{
+  color:#000000;
+  display:block;
+  line-height: 20px;
+  text-decoration: none;
+  padding:5px;
+}
+
+p{
   text-align:center;
 }
+
+img,.image{
+  border-radius: 50%;
+}
+
+.image{
+  width:600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image:hover{
+  transform: scaleX(-1);
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,tr{
+  text-align: left;
+  padding: 8px;
+}
+
+.green{
+  background-color:#027368;
+  color: #ffffff;
+}
+
+
+tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+.map{
+  width:400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map1{
+  width:40px;
+}
+
+.map123{
+  width:40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.edinburgh{
+  width:600px;
+  height:600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.media{
+  width:30px;
+}
+
+.map12{
+  width:400px;
+}
+
+.friends{
+  width:300px;
+  height:400px;
+}
+
+form{
+  text-align:center;
+}
+
+textarea{
+  row:4;
+  cols:50;
+}
+
