@@ -35,7 +35,7 @@ body{
 }
 
 .grey{
-  color::#4B4952;
+  color:#4B4952;
 }
 
 
@@ -200,6 +200,13 @@ textarea{
   body{
     background-color: rgba(4,191,173,0.1);
   }
+  .image{
+    width:500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
 
 /* adding style for screen size that is 480px or less*/
@@ -207,6 +214,15 @@ textarea{
 @media screen and (max-width: 480px){
   body{
     background-color:rgba(8,151,180,0.1);
+  }
+  .grey1{
+    text-align:center;
+  }
+  .image{
+    width:400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
