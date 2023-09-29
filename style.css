@@ -2,7 +2,7 @@
 
 /*color scheme*::after
 /* light green #99BF76*::after
-/* light blue #93BFB7*::after
+/* light blue #93BFB7 rgb(147,191,183) *::after
 /*turquiose #7AB8BF*::after
 /* beige #F2E7DC*/
 /* light-beige  #DAFDBA*/
@@ -12,9 +12,12 @@
 /* brown: #818274*/
 /* green:#027368*/
 /* light-turquiose:#04BFAD*/
+/* grey:#97A6A0*/
+/* light-yellow:#D6D58E*/
+/* light blue:#9BF2EA rgb(155,242,234)*/
 
 body{
-  background-color:  #93BFB7;
+  background-color:  rgba(147,191,183,1);
 }
 
 .light{
@@ -183,4 +186,28 @@ textarea{
   row:4;
   cols:50;
 }
+
+/*adding style for table*/
+
+@media screen and (max-width: 992px){
+  body{
+    background-color: rgba(122,184,191,0.5);
+  }
+}
+ /* adding style for phone*/
+
+@media screen and (max-width:600px){
+  body{
+    background-color: rgba(4,191,173,0.1);
+  }
+}
+
+/* adding style for screen size that is 480px or less*/
+
+@media screen and (max-width: 480px){
+  body{
+    background-color:rgba(8,151,180,0.1);
+  }
+}
+
 
