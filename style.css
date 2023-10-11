@@ -32,10 +32,16 @@ body{
 .size{
   font-size:20px;
   text-align:center;
+  font-family: 'Pacifico', cursive;
 }
 
 .grey{
   color:#4B4952;
+}
+
+.column .friends{
+  width:300px;
+  height:300px;
 }
 
 
@@ -51,6 +57,7 @@ body{
 .center2{
   text-align:center;
   list-style:none;
+  font-family: 'Pacifico', cursive;
 }
 
 
@@ -127,11 +134,13 @@ table{
 td,tr{
   text-align: left;
   padding: 8px;
+  font-family: 'Pacifico', cursive;
 }
 
 .green{
   background-color:#027368;
   color: #ffffff;
+  
 }
 
 
@@ -139,8 +148,9 @@ tr:nth-child(even){
   background-color: #f2f2f2;
 }
 
+/* Adding style to images*/
 .map{
-  width:400px;
+  width:340px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -158,87 +168,279 @@ tr:nth-child(even){
 }
 
 .edinburgh{
-  width:600px;
-  height:600px;
+  width:310px;
+  height:310px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.media{
-  width:30px;
+.column .media{
+  width:40px;
 }
 
 .map12{
   width:400px;
 }
 
-.friends{
-  width:300px;
-  height:400px;
+.card .friends{
+  width:250px;
+  height:221px;
 }
 
+
+/* adding style to the contact form*/
 form{
-  text-align:center;
+  background-image: url("images/blue-wallpaper.jpg");
+  font-size:20px;
+  border-radius:5px ;
 }
 
-textarea{
-  row:4;
-  cols:50;
+input[type=text],textarea,select{
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 7px;
+  resize: vertical;
 }
 
-/*adding style for table*/
+input[type="submit"]{
+  background-color: #589A8D ;
+  color: #000000;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-@media screen and (max-width: 992px){
-  body{
-    background-color: rgba(122,184,191,0.5);
+
+
+
+/* adding style to the columns in all pages*/
+*{
+  box-sizing: border-box;
+}
+
+.column{
+  float: left;
+  width: 25%;
+  padding: 20px;
+  position:relative;
+}
+
+.column1{
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+  position:relative;
+}
+
+.column2{
+  float: left;
+  width: 50%;
+  padding: 0px;
+  position:relative;
+  
+}
+.column3{
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+  position:relative;
+}
+
+.column1 .contact{
+  width:300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.row:after{
+  content: "";
+  display:table;
+  clear:both;
+}
+
+
+/* creating a responsive layout for a tablet*/
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
   }
-}
- /* adding style for phone*/
+  .column1{
+    width:50%;
+  }
+  .column2{
+    width:100%;
+  }
+  .column3{
+    width:100%;
+  }
 
-@media screen and (max-width:600px){
-  body{
-    background-color: rgba(4,191,173,0.1);
+  .column3 .map{
+
+    width:200px;
+  }
+}  
+
+/*creating a responsive layout for a phone*/
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .column1{
+    width:100%;
   }
   .image{
     width:400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
-  .edinburgh{
-    width:500px;
-    height:500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+  .column3{
+    width:100%;
+  }
+  .column3 .map{
+    width:200px;
   }
   
 }
 
-/* adding style for screen size that is 480px or less*/
-
-@media screen and (max-width: 480px){
-  body{
-    background-color:rgba(8,151,180,0.1);
-  }
-  .grey1{
-    text-align:center;
-  }
-  .image{
-    width:5px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .edinburgh{
-    width:100px;
-    height:100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.column img{
+  width:100%;
+  height:auto;
 }
 
+.column:hover{
+  border: 1px solid #777;
+}
+
+.column .re{
+  padding: 15px;
+  text-align: center;
+}
+/* adding font style to the descriptions*/
+.hello{
+  font-family: 'Pacifico', cursive;
+  text-align:center;
+}
+
+
+
+.column .re{
+  font-family: 'Pacifico', cursive;
+}
+
+/*end of font style*/
+
+
+
+/* adding glow to home page,attractive places*/
+.glow{
+  color: #4B4952;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from{
+    text-shadow: 0 0 10px #fff, 0 0 20px #027368, 0 0 30px #027368, 0 0 40px #027368, 0 0 50px #027368, 0 0 60px #027368,0 0 70px #027368;
+  }
+  to{
+    text-shadow: 0 0 20px #fff, 0 0 30px #9BF2EA,  0 0 40px #9BF2EA,  0 0 50px #9BF2EA, 0 0 60px #9BF2EA,  0 0 70px #9BF2EA,  0 0 80px #9BF2EA, ;
+}
+}
+
+
+/*adding style to the contact form*/
+.container{
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+ .link{
+   list-style: none;
+   padding: 0;
+ }
+
+.wrapper{
+   box-shadow: 0 0 40px 0 rgba(57, 82, 163, 0.7);
+}
+
+
+
+.details{
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+
+
+.column2 .details .details1{
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/background-image.jpg");
+  background-size:cover;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  color:#DAFDBA;
+  padding:150px 0;
+  
+}
+
+
+.details2{
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+  background-image: url("images/blue-wallpaper.jpg");
+}
+
+.column2 .details .details1 p a {
+  text-decoration:none;
+  color:#DAFDBA;
+}
+
+
+
+
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  text-align: center;
+  font-family: arial;
+}
+
+.title{
+  color: grey;
+  font-size: 18px;
+}
+
+.friend-button{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+ /* adding style to my friends profile*/
+.links{
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.column .card ul .points{
+  list-style-type:none
+}
 
