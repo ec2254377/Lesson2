@@ -431,6 +431,7 @@ input[type="submit"]{
 .title{
   color: grey;
   font-size: 18px;
+  font-family: 'Caveat', cursive;
 }
 
 .friend-button{
