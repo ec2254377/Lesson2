@@ -289,6 +289,12 @@ input[type="submit"]{
 
     width:200px;
   }
+  .card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  text-align: center;
+  font-family: arial;
+}
 }  
 
 /*creating a responsive layout for a phone*/
@@ -308,6 +314,12 @@ input[type="submit"]{
   .column3 .map{
     width:200px;
   }
+  .card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  text-align: center;
+  font-family: arial;
+}
   
 }
 
