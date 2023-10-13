@@ -96,8 +96,11 @@ footer{
   display:block;
   overflow:hidden;
   width:100%;
+  bottom:0;
   
 }
+
+
 
 footer a{
   color:#000000;
@@ -295,6 +298,8 @@ input[type="submit"]{
   text-align: center;
   font-family: arial;
 }
+  
+  
 }  
 
 /*creating a responsive layout for a phone*/
@@ -319,7 +324,9 @@ input[type="submit"]{
   max-width: 500px;
   text-align: center;
   font-family: arial;
-}
+  }
+  
+  
   
 }
 
